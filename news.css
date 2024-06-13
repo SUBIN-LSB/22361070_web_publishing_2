@@ -1,0 +1,97 @@
+main {
+    text-align: center;
+    width: 1522px;
+    border: 2px solid;
+    padding: 40px 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main h1 {
+    font-size: 90px;
+    margin-bottom: 48px;
+    margin-top: 20px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+:root {
+    /* --light-blue: #4db1ec;
+    --blue: #1665cc;
+    --purple: #b473bf;
+    --pink: #ffb2c1;
+    --orange: #ff9f67;
+    --yellow: #ffd673;
+    --light-green: #a2e29b;
+    --green: #00a2af;
+    --gray: #333;
+    --white: #fff; */
+    --gray-blue: #3e3e3e;
+    --dack-blue: #292525;
+    --purple-blue: #373737;
+    --blue: #312f2f;
+    --light-blue: #434447;
+    --blue-green: #5f3838;
+    --green: #7b4b4b;
+    --light-green: #563030;
+    --mint-green: #6e3b3b;
+    --mint: #644545;
+}
+.main-image {
+    width: 770px;
+    height: 600px;
+    background: var(--gray-blue) url('./img/img1.jpg') no-repeat center / cover;
+    background-color: var(--gray-blue);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: screen;
+    animation: bg-color 10s infinite;
+    position: relative;
+}
+@keyframes bg-color {
+    0% { background-color: var(--gray-blue); }
+    25% { background-color: var(--mint-green); }
+    50% { background-color: var(--purple-blue); }
+    60% { background-color: var(--green); }
+    75% { background-color: var(--light-blue); }
+    100% { background-color: var(--blue-green); }
+}
+
+.text-content {
+    max-width: 300px;
+    font-size: 20px;
+    line-height: 1.8rem;
+    text-align: left;
+}
+
+main h2 {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+main > p {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.bottom-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.bottom-text p {
+    max-width: 200px;
+    line-height: 1.8rem;
+    text-align: center;
+}

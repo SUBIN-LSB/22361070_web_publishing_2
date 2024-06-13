@@ -1,0 +1,100 @@
+/* 공통 부분 CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(Img/background_img.png);
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* 헤더 부분 CSS */
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+.headerlogo {
+    font-size: 54px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.headerlogo a {
+    color: #000000;
+    text-decoration: none;
+}
+.header-line {
+    border: 1px solid;
+}
+nav ul {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 30px 0 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* 푸터 부분 CSS */
+
+.footer-box {
+    position: relative;
+    width: 102px;
+    height: 35px;
+    left: 1497px;
+    background-color: #000000;
+}
+footer {
+    border-top: 2px solid;
+    text-align: center;
+}
+.footerlogo {
+    margin-bottom: 40px;
+    font-size: 34px;
+    font-weight: bold;
+}
+.footer-info {
+    position: relative;
+    margin-left: 155px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: left;
+}
+
+.footer-links {
+    position: relative;
+    margin-right: 155px;
+    text-align : right
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.footer-info p, .footer-links a {
+    color: #000000;
+    font-size: 14px;
+    margin: 5px 0;
+    line-height: 1.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+}

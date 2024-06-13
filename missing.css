@@ -1,0 +1,141 @@
+main {
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid;
+    width: 1522px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section {
+    display: none;
+}
+.section.active {
+    display: block;
+}
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.left-section {
+    text-align: center;
+}
+
+.left-section h1 {
+    font-size: 70px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.left-section p {
+    font-size: 20px;
+    margin: 30px 0;
+}
+.main-image {
+    width: 660px;
+    height: 600px;
+    margin: 20px auto;
+}
+.image_1 {
+    width: 660px;
+    height: 600px;
+    background-color: #D9CBBE;
+    margin: 20px auto;
+}
+.image_2 {
+    width: 660px;
+    height: 600px;
+    background-color: #c4bed9;
+    margin: 20px auto;
+    position: absolute;
+    top: 29.4rem;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+.main-image:hover .image_2 {
+    opacity: 1;
+}
+
+.main_img1 {
+    background-image: url(Img/오빠.png);
+}
+.main_img2 {
+    background-image: url(Img/오빠호버.png);
+}
+.main_img3 {
+    background-image: url(Img/나.png);
+}
+.main_img4 {
+    background-image: url(Img/나호버.png);
+}
+.main_img5 {
+    background-image: url(Img/땅콩.png);
+}
+.main_img6 {
+    background-image: url(Img/땅콩호버.png);
+}
+.main_img7 {
+    background-image: url(Img/알로.png);
+}
+.main_img8 {
+    background-image: url(Img/알로호버.png);
+}
+.main_img9 {
+    background-image: url(Img/호야.png);
+}
+.main_img10 {
+    background-image: url(Img/호야호버.png);
+}
+.left-section .quote {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.stars {
+    font-size: 45px;
+    margin: 10px 0 40px 0;
+}
+
+.right-section {
+    text-align: left;
+    height: 980px;
+    padding: 20px;
+    border-left: 2px solid;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 30px;
+    padding: 0 30px;
+}
+
+.text-content {
+    border-top: 2px solid;
+    margin: 10px;
+    padding: 15px 20px;
+}
+.text-cont .text-content:first-child {
+    border-top: none;
+    margin-top: 40px
+}
+
+.text-content h2 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.text-content p {
+    font-size: 18px;
+}

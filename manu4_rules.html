@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> RULES </title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="rules.css">
+</head>
+<body>
+    <header>
+        <div class="headerlogo"><a href="index.html">NAPOLI</a></div>
+        <div class="header-line"></div>
+        <nav>
+            <ul>
+                <li><a href="manu1_news.html">NEWS&emsp;&emsp;|</a></li>
+                <li><a href="manu2_missing.html">MISSING&emsp;&emsp;|</a></li>
+                <li><a href="manu3_recipes.html">RECIPES&emsp;&emsp;|</a></li>
+                <li><a href="#">RULES&emsp;&emsp;|</a></li>
+                <li><a href="manu5_secrets.html">SECRETS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="rules-container">
+            <div class="rules-wrapper">
+                <div class="rules">
+                    <h1>RULES 1</h1>
+                    <ul>
+                        <li>WIf you find a Napoli pasta restaurant while lost, never enter.</li>
+                        <li>If you do enter, leave immediately after finishing your meal and never try to find the restaurant again.</li>
+                        <li>Do not cook alone in the kitchen of an old Napoli pasta restaurant.</li>
+                        <li>If you find a plate of fresh pasta on an empty table, do not eat it and leave immediately.</li>
+                        <li>If you discover an unfamiliar Napoli pasta recipe, do not cook it.</li>
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h1>RULES 2</h1>
+                    <ul>
+                        <li>If you do cook it and strange things happen, dispose of all the food and leave the kitchen immediately.</li>
+                        <li>If the food keeps refilling at a Napoli pasta restaurant, leave immediately.</li>
+                        <li>If the behavior of other diners seems unusual, stop eating and leave the restaurant.</li>
+                        <li>Even if the Napoli pasta sauce is delicious, do not become obsessed with it.</li>
+                        <li>If you find yourself developing a strong attachment to the sauce, do not visit the restaurant again.</li>
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h1>RULES 3</h1>
+                    <ul>
+                        <li>If you hear whispers while dining alone at a Napoli pasta restaurant, do not listen.</li>
+                        <li>If the whispers persist, leave immediately and never return to the restaurant.</li>
+                        <li>If you cannot see other customers who entered a Napoli pasta restaurant, do not enter.</li>
+                        <li>If the staff seems strange, leave immediately and do not visit the restaurant again.</li>
+                        <li>If clocks stop or time flows abnormally while at a Napoli pasta restaurant, leave immediately.</li>
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h1>RULES 4</h1>
+                    <ul>
+                        <li>If time seems to pass too quickly or slowly during your meal, stop eating and leave the restaurant.</li>
+                        <li>If other customers at a Napoli pasta restaurant behave oddly or stare silently, leave immediately.</li>
+                        <li>If other diners are unusually quiet or make eye contact with you, stop eating and leave the restaurant.</li>
+                        <li>If the taste or color of the Napoli pasta suddenly changes, stop eating and leave immediately.</li>
+                        <li>If the food smells strange or visually changes, do not eat it and leave immediately.</li>
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h1>RULES 5</h1>
+                    <ul>
+                        <li>If all noise suddenly disappears or strange sounds are heard at a Napoli pasta restaurant, leave immediately.</li>
+                        <li>Write down the first content.</li>
+                        <li>If the music repeats unnaturally or the waiter cannot explain a sound, leave immediately.</li>
+                        <li>If you enter the kitchen of a Napoli pasta restaurant and everything is eerily silent, leave immediately.</li>
+                        <li>If the kitchen staff do not acknowledge your presence or speak in whispers, do not stay.</li>
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h1>RULES 6</h1>
+                    <ul>
+                        <li>If there are mirrors in a Napoli pasta restaurant and you see something in the reflection that isn't there in reality, do not look at the mirrors and leave immediately.</li>
+                        <li>If your reflection behaves differently from you, stop eating and leave.</li>
+                        <li>If you find yourself walking down a hallway in a Napoli pasta restaurant that seems to stretch endlessly, turn back immediately.</li>
+                        <li>If doors appear and disappear or the hallway changes, do not proceed further.</li>
+                        <li>If the lights in a Napoli pasta restaurant flicker or change colors, be cautious.</li>
+                    </ul>
+                </div>
+                <div class="rules">
+                    <h1>RULES 7</h1>
+                    <ul>
+                        <li>If the lights go out completely and strange noises follow, leave immediately.</li>
+                        <li>If a Napoli pasta restaurant has portraits on the walls and the eyes seem to follow you, avoid looking at them.</li>
+                        <li>If the portraits change expressions or appear to move, leave the restaurant immediately.</li>
+                        <li>If you hear music playing in a Napoli pasta restaurant that no one else seems to notice, do not listen closely.</li>
+                        <li>If the music changes to an eerie tune or seems to come from nowhere, leave immediately.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-box"></div>
+        <div class="footer-content">
+            <div class="footer-info">
+                <div class="footerlogo"><a href="#">NAPOLI</a></div>
+            
+                <p>SUN _ PM 04 : 00 ~ PM 06 : 00</p>
+                <p>COPYRIGHT (C) BALO, CHANGUEUL ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">FIRST LINK _ TWITTER</a>
+                <br/>
+                <a href="#">SECOND LINK _ BLUESKY</a>
+            </div>
+    </footer>
+
+    <script>
+
+        document.querySelector('.rules-container').addEventListener('wheel', function(event) {
+            // Prevent the default vertical scroll behavior
+            event.preventDefault();
+
+            // Calculate the new scroll position
+            let newScrollLeft = this.scrollLeft + event.deltaY;
+
+            // Clamp the new scroll position to the valid range
+            newScrollLeft = Math.max(0, Math.min(newScrollLeft, 600));
+
+            // Set the scroll position
+            this.scrollLeft = newScrollLeft;
+
+            // Apply the transform to the rules-wrapper
+            document.querySelector('.rules-wrapper').style.transform = `translateX(-${newScrollLeft}px)`;
+        });
+
+    </script>
+    
+</body>
+</html>
