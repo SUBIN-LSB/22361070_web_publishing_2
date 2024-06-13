@@ -47,7 +47,7 @@ main h1 {
 .main-image {
     width: 770px;
     height: 600px;
-    background: var(--gray-blue) url('./img/img1.jpg') no-repeat center / cover;
+    background: var(--gray-blue) url('./Img/img1.jpg') no-repeat center / cover;
     background-color: var(--gray-blue);
     background-repeat: no-repeat;
     background-position: center;
